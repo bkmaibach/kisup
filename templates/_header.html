@@ -1,8 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <!-- GENERAL SETTINGS -->
         <meta charset="utf-8">
-        <meta http-equiv="content-language" content="en-us">
         <base href="{{global-baseUrl}}" />
 
         <!-- META TAGS -->
@@ -11,26 +11,28 @@
 
         <!-- STATIC ASSESTS -->
         <link type="image/x-icon" rel="icon" href="favicon.ico">
-        <script type="text/javascript" charset="utf-8" src="public/app.js"></script>
+        <script src="public/app.js"></script>
         <link rel="stylesheet" type="text/css" href="public/app.css" />
     </head>
-        <body class="{{body-class}}">
-            <!-- PAGE WRAPPER -->
-            <div class="wrapper">
-                <!-- HEADER -->
-                <div class ="header">
-                    <!-- LOGO -->
-                    <a class="logo" href="/"></a>
-                    <!-- NAVIGATION -->
-                    <ul class="menu">
-                        <li><a href="">Home</a></li>
-                        <li><a class="loggedOut" href="">Signup</a></li>
-                        <li><a class="loggedOut" href="">Login</a></li>
-                        <li><a class="loggedIn" href="">Dashboard</a></li>
-                        <li><a class="loggedIn" href="">Account Settings</a></li>
-                        <li><a class="loggedIn" href="">Logout</a></li>
-                    </ul>
 
-                </div>
+    <body class="{{body-class}}">
+        <!-- PAGE WRAPPER -->
+        <div class="wrapper">
+            <!-- HEADER -->
+            <div class="header">
+                <!-- LOGO -->
+                <a class="logo" href="/"></a>
+                <!-- NAVIGATION -->
+                <ul class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a class="loggedOut" href="/account/create">Signup</a></li>
+                    <li><a class="loggedOut" href="/session/create">Login</a></li>
+                    <li><a class="loggedIn" href="/checks/all">Dashboard</a></li>
+                    <li><a class="loggedIn" href="/account/edit">Account Settings</a></li>
+                    <li><a class="loggedIn" href="#">Logout</a></li>
+                </ul>
 
-                <!-- PAGE SPECIFIC CONTENT -->
+            </div>
+
+            <!-- PAGE SPECIFIC CONTENT -->
+            <div class="content">
